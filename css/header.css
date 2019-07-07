@@ -1,0 +1,135 @@
+.header-box{
+    background-color:#fff;
+    position:relative;
+    border-top:3px solid #e70012;
+    box-shadow:0 5px 5px rgba(0,0,0,0.1);
+    z-index:4;
+}
+
+.header-box .header{
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+    padding-bottom:25px;
+    margin-top:10px;
+    z-index:1;
+}
+
+.header-box .header .icon-box{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.icon-box a span::after{
+    display:block;
+    width:0;
+    height:0;
+    content:"";
+    border-width:3px 0px 3px 6px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fff;
+    position:absolute;
+    top:3px;
+    left:5px;
+}
+
+.icon-box span{
+    display:block;
+    width:14px;
+    height:14px;
+    background:#e70012;
+    border-radius: 50%;
+    position:relative;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.icon-box a{
+    display:flex;
+    text-indent:20px;
+    letter-spacing:1px;
+}
+
+.header .menu{
+    margin-top:20px;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header .menu li{
+    width:127px;
+    height:50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position:relative;
+
+}
+
+/*.header .menu li a:hover{*/
+    /*border-bottom:2px solid #e70012;*/
+/*}*/
+
+/*.header .menu li:nth-child(4) a:hover{*/
+    /*border-bottom:2px solid transparent;*/
+/*}*/
+
+.header .menu li:nth-child(4){
+    width:200px;
+}
+
+.header .menu li~li{
+    border-left:1px solid #ddd;
+}
+
+.header .menu li a img{
+    display:block;
+    border:none;
+    width:130px;
+}
+
+.header .menu li a{
+    width:90%;
+    display:flex;
+    height:50px;
+    line-height: 50px;
+    justify-content:center;
+    align-items: center;
+    font-weight:bold;
+    letter-spacing: 1px;
+    /*border-bottom:2px solid transparent;*/
+    transition: 1s;
+}
+
+.header .menu li:not(:nth-child(4)):after{
+    content:"";
+    display:block;
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:0;
+    background-color:#e70012;
+    transition: all .3s;
+}
+
+.header .menu li.on:after,.header .menu li:not(:nth-child(1)):hover::after{
+    width:80%;
+    margin-left:-40%;
+}
+
+.header .menu::after{
+    display:block;
+    content:"";
+    width:200px;
+    height:50px;
+    background:#fff;
+    position:absolute;
+    top:110px;
+    left:40.5%;
+    border-radius: 50%/0px 0px 100% 100%;
+}

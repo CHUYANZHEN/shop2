@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Microsoft Yahei, Arial, Helvetica, sans-serif;
+    overflow-x: hidden; }
+
+
+a {
+    display: block;
+    color: #000;
+    text-decoration: none; }
+
+img {
+    display: block;
+    border: none; }
+
+h1, h2, h3 {
+    font-weight: normal; }
+
+ul {
+    list-style-type: none; }
+
+.my_header{
+    width:100%;
+    height:180px;
+}
+
+.my_footer{
+    width:100%;
+    height:860px;
+}
+
+.num-box .p-16 span,.plaster{
+    background:url("../images/bolx_y.png") no-repeat center bottom;
+}
+

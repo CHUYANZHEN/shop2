@@ -1,0 +1,180 @@
+body{
+    background:url("../images/diandian1.jpg");
+}
+
+.breadcrumb{
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+    margin-top:30px;
+}
+
+.breadcrumb a,.breadcrumb span{
+    color:#666;
+    font-size:14px;
+}
+
+.content{
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:80px;
+}
+
+.title-box{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:40px;
+}
+
+.title-box .title{
+    font-size:32px;
+    line-height:1.4;
+}
+
+.title-box .title{
+    width:288px;
+    margin:0 auto;
+    background:url("../images/bolx_y.png") no-repeat bottom center;
+}
+
+.title-box .sub-title{
+    font-size:18px;
+}
+
+.title-box .sub-title{
+    color:#cfbea2;
+    margin-top:10px;
+    
+}
+
+.banner-box{
+    display:flex;
+    justify-content:space-between;
+}
+
+.banner-box .banner{
+    width:50%;
+    margin-left:20px;
+
+}
+
+.banner-box .banner img{
+    width:100%;
+    border-radius:10px 10px 0 0;
+}
+.banner-box .banner .text{
+    height:50px;
+    background:#fff;
+    line-height:50px;
+    display:flex;    
+    align-items: center;
+    padding-left:20px;
+}
+
+.banner-box .banner .text span{
+    display:block;
+    width:15px;
+    height:15px;
+    background-color:#e70012;
+    border-radius:50%;
+    margin-right:10px;
+    position:relative;
+}
+
+.banner-box .banner .text span::after{
+    content:"";
+    display:block;
+    width:0;
+    height:0;
+    border-width:4px 4px 4px 6px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fff;
+    position:absolute;
+    top:4.5px;
+    right:-1px;
+}
+
+.news-box >div{
+    max-width:92%;
+}
+
+.news-box{
+    margin-top:50px;
+    margin-left:75px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.news .date{
+    color:#66624f;
+}
+
+.icon{
+    display:flex;
+}
+
+.news{
+    width:50%;
+    max-width:92%;
+    line-height:1.4;
+    margin-top:15px;
+    text-align: left;
+}
+
+.news .text{
+    padding-top:10px;
+    padding-left:25px;
+}
+.news-box span,.banner-box span{
+    display:block;
+    width:14px;
+    height:14px;
+    background:#e70012;
+    border-radius: 50%;
+    position:relative;
+    margin-right:10px;
+}
+
+.news-box a:hover{
+    text-decoration:underline;
+}
+
+.news-box span::after,.banner-box span::after{
+    display:block;
+    width:0;
+    height:0;
+    content:"";
+    border-width:3px 0px 3px 6px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fff;
+    position:absolute;
+    top:30%;
+    left:35%;
+}
+
+.pagination{
+   text-align: center;
+   margin-top:70px;
+}
+
+.pagination ul{
+    display:inline-block;
+}
+
+.pagination ul li{
+    display:inline-block;
+    width:28px;
+    height:28px;
+    background:#fff;
+    text-align: center;
+    line-height: 28px;
+    border-radius:5px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1)
+}
+
+.pagination ul li.on{
+    background:#e70012;
+    color:#fff;
+}

@@ -1,0 +1,210 @@
+.breadcrumb{
+    font-size:14px;
+}
+
+.family{
+    background:url("../images/bg_family.jpg") no-repeat center;
+    padding-bottom:140px;
+    position:relative;
+    overflow:hidden;
+    margin-top:-2px;
+    margin-bottom:-180px;
+}
+
+.breadcrumb{
+    width:1000px;
+    display:flex;
+    align-items: center;
+    margin:35px auto 50px;
+    position:relative;
+    box-sizing: border-box;
+    z-index:1;
+}
+
+.family .title{
+    text-align: center;
+    position:relative;
+    z-index:1;
+    opacity:0;
+    animation-duration:1s;
+    animation-fill-mode:both;
+}
+
+.family .title img{
+    max-width:80%;
+    display:inline-block;
+}
+
+.fadeInDown{
+    animation-name:fadeInDown;
+
+}
+
+@keyframes fadeInDown {
+    0%{
+        opacity:0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.family .balloon{
+    top:60px;
+    animation-duration:2s;
+}
+
+.family .balloon, .family .cloud{
+    width:100%;
+    position:absolute;
+    text-align:center;
+    opacity:0;
+    animation-fill-mode:both;
+}
+
+.fadeInUp{
+    animation-name:fadeInUp;
+}
+.family .balloon img,.family .cloud img{
+    max-width:100%;
+    display:inline-block;
+}
+
+@keyframes fadeInUp {
+    0%{
+        opacity:0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.family .cloud{
+    top:30px;
+    animation-duration:5s;
+}
+
+.fadeIn{
+    animation-name:fadeIn;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.family>.box{
+    text-align:center;
+    margin-top:80px;
+}
+
+.family ul{
+    display: inline-block;
+}
+
+.family ul li{
+    display:inline-block;
+    margin:10px 2px;
+    position:relative;
+    animation-fill-mode:both;
+    animation-delay: 1s;
+    animation-duration:1.1s;
+    transform:scale3d(0.3,0.3,0.3);
+    opacity: 0;
+}
+
+.bounceIn{
+    animation-name:bounceIn;
+}
+
+.family ul li img#pos2{
+    animation-delay: 2s;
+}
+
+@keyframes bounceIn {
+    0%,20%,40%,60%,80%,100%{
+        animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+    0%{
+        opacity:0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20%{
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40%{
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60%{
+        opacity:1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80%{
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100%{
+        opacity:1;
+        transform: scale3d(1, 1, 1);
+    }
+
+}
+
+.box>ul{
+    margin-left:-20px;
+}
+
+.family ul li .hint{
+    text-align: center;
+    position:absolute;
+    background-color:#fff;
+    padding:5px 20px;
+    border-radius:30px;
+    white-space: nowrap;
+    top:-46px;
+    left:50%;
+    transform: translate(-50%);
+    display:none;
+    animation-duration:1s;
+}
+
+.family ul li .hint{
+    font-size:20px;
+}
+
+.family ul li .hint::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:12px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    bottom:-12px;
+    left:50%;
+    margin-left:-10px;
+}
+
+.fadeInUp2{
+    animation-name:fadeInUp2;
+}
+
+@keyframes fadeInUp2 {
+    0%{
+        opacity:0;
+        transform:translate3d(-50%,100%,0);
+    }
+    100%{
+        opacity:1;
+        transform:translate3d(-50%,0%,0);
+    }
+}
+

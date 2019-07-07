@@ -1,0 +1,215 @@
+body{
+    background:url("../images/bg-index.jpg");
+}
+.section1{
+    background:#fff;
+    padding:45px 0;
+}
+.title-box{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.title-box .title{
+    font-size:32px;
+    line-height:1.4em;
+    background:url("../images/bolx_y.png") no-repeat center bottom;
+}
+
+.title-box .sub-title{
+    color:#cfbea2;
+    margin-top:10px;
+    justify-content: space-between;
+}
+
+.top-list{
+    margin:0 auto;
+    text-align: center;
+}
+
+.top-list ul li{
+    display:inline-block;
+    width:145px;
+    height:184px;
+    margin:15px;
+    position:relative;
+}
+
+.top-list ul li:hover p{
+    background:#e70012;
+    color:#fff;
+}
+
+.top-list ul li a img{
+    width:90px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 1;
+}
+
+.top-list ul li a p{
+    border-radius: 50%;
+    position:absolute;
+    top:0;
+    right:0;
+    color:#793822;
+    border:1px dashed #793822;
+}
+
+.top-list ul li a p span{
+    display:table-cell;
+    vertical-align: middle;
+    width:100px;
+    height:100px;
+    text-align: center;
+    position:relative;
+    top:5px;
+    line-height:1.4em;
+}
+
+.top-news{
+    padding-top:43px;
+    position:relative;
+    width:1000px;
+    max-width:100%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.top-news .title{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.top-news .title img{
+    width:141px;
+}
+
+.a-box{
+    display:flex;
+}
+
+.news-box >div{
+    max-width:92%;
+}
+
+.news-box{
+    margin-top:50px;
+    margin-left:75px;
+}
+
+.news .date{
+    color:#66624f;
+}
+
+.icon{
+    display:flex;
+}
+
+.news{
+    width:478px;
+    max-width:92%;
+    line-height:1.4;
+    margin-top:15px;
+}
+
+.news .text{
+    padding-top:10px;
+    padding-left:25px;
+}
+.news-box span,.banner-box span{
+    display:block;
+    width:14px;
+    height:14px;
+    background:#e70012;
+    border-radius: 50%;
+    position:relative;
+    margin-right:10px;
+}
+
+.news-box a:hover{
+    text-decoration:underline;
+}
+
+.news-box span::after,.banner-box span::after{
+    display:block;
+    width:0;
+    height:0;
+    content:"";
+    border-width:3px 0px 3px 6px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fff;
+    position:absolute;
+    top:30%;
+    left:35%;
+}
+
+.a-box > div{
+    max-width:92%;
+}
+
+.banner{
+    width:445px;
+    max-width:92%;
+    border-radius:5px;
+    margin:0 auto;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.banner img{
+    width:100%;
+}
+
+.banner .text{
+    width:100%;
+    background-color:#fff;
+    height:50px;
+    line-height:50px;
+    display:flex;
+    align-items: center;
+    padding-left:15px;
+}
+
+.news{
+    font-size:14px;
+    text-align: left;
+}
+
+.section2 .more{
+    margin:0 auto;
+    margin-top:50px;
+}
+
+.more{
+    width:150px;
+    height:40px;
+    line-height:40px;
+    border-radius:40px;
+    text-align:center;
+    background:#e70012;
+    position:relative;
+    color:#fff;
+}
+
+.more::after{
+    display:block;
+    content:"";
+    width:0;
+    height:0;
+    border-width:5px 3px 5px 9px;
+    border-color:transparent transparent transparent #fff;
+    border-style:solid;
+    position:absolute;
+    top:15px;
+    left:25px;
+}
+
+.footer{
+    background:url("../images/bg-index.jpg");
+}

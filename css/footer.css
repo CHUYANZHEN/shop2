@@ -1,0 +1,246 @@
+body{
+   /* background-image:url("../images/bg_floor.jpg");*/
+    background-size:900px 675px;
+}
+
+.kv-footer{
+    position:relative;
+    padding:250px 0 90px 0;
+}
+
+.kv-footer::before{
+    height:184px;
+    background-image:url("../images/bg_leaf.png");
+    background-size:470px 184px;
+    top:50px;
+}
+
+.kv-footer::after{
+    height:73px;
+    background-image:url("../images/bg_fence.png");
+    bottom:0;
+    background-size:370px 73px;
+}
+
+.kv-footer::before,.kv-footer::after{
+    display:block;
+    content:"";
+    width:100%;
+    position:absolute;
+}
+
+.kv-footer .bg-yellow{
+    width:100%;
+    height:330px;
+    position:absolute;
+    bottom:0;
+}
+
+.kv-footer .bg-yellow::before{
+    height:60px;
+    top:0;
+    background-image:url("../images/bg_wave.png");
+    background-position:center;
+    background-size:1915px 60px;
+}
+
+.kv-footer .bg-yellow::before,.kv-footer .bg-yellow::after{
+    display:block;
+    content:"";
+    width:100%;
+    position:absolute;
+}
+
+.kv-footer .bg-yellow::after{
+    height:270px;
+    bottom:0;
+    background-image:url("../images/bg_yellow.png");
+}
+
+.kv-footer .gotop{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-30px;
+    z-index:1;
+}
+
+.kv-footer .box{
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    position:relative;
+    z-index:1;
+}
+
+.kv-footer .box img{
+    max-width:320px;
+}
+
+.footer{
+    border-bottom:3px solid #e70012;
+    padding-top:35px;
+    background:#fff;
+}
+
+.footer .logo{
+    width:130px;
+}
+
+.footer .logo img{
+    width:100%;
+}
+
+.footer .box{
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.footer .map{
+    width:627px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+.footer .map li{
+    width:130px;
+    margin-top:15px;
+    margin-left:35px;
+}
+.footer .map li:nth-child(4n+1){
+    margin-left:0;
+}
+
+.footer .map li a{
+    position:relative;
+    text-indent:15px;
+    color:#666;
+}
+
+.footer .map li a::after{
+    display:block;
+    content:"";
+    border-width:4px 0 4px 6.9px;
+    border-style:solid;
+    border-color:transparent transparent transparent #e70012;
+    position:absolute;
+    top:50%;
+    left:0;
+    margin-top:-4px;
+}
+
+.footer .qrcode-box .qrcode img{
+    width:172px;
+}
+.footer .qrcode-box{
+    width:345px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer .btn-box{
+    width:1000px;
+    margin:0 auto;
+    margin-top:45px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.btn-more{
+    width:326px;
+    max-width:100%;
+    height:58px;
+    line-height:58px;
+    background-color:#e70012;
+    border:1px solid #e70012;
+    text-align:center;
+    color:#fff;
+    letter-spacing: 1.5px;
+    display:flex;
+    align-items: center;
+    box-sizing:border-box;
+    padding:0 50px;
+    justify-content: space-between;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+    padding:0 40px 0 15px;
+}
+
+.btn-box .btn-more span::after{
+    content:"";
+    width:10px;
+    height:10px;
+    position:absolute;
+    top:50%;
+    right:0;
+    transform: rotate(45deg);
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    transform-origin: right top;
+    box-sizing: border-box;
+}
+
+.footer .btn-box .btn-more .arrow{
+    width:40px;
+}
+
+.footer .btn-box .btn-more.arrow span{
+    width:40px;
+}
+
+.btn-more .arrow span{
+    display:block;
+    height:2px;
+    width:50px;
+    background:#fff;
+    position:relative;
+    transition: width 0.6s;
+}
+
+.footer .btn-box .btn-more:hover{
+    background:#fff;
+    color:#e70012;
+}
+
+.footer .btn-box .btn-more:hover .arrow span{
+    width:73px;
+    background:#e70012;
+}
+
+.footer .btn-box .btn-more:hover .arrow span::after{
+
+    border-top:2px solid #e70012;
+    border-right:2px solid #e70012;
+}
+
+.footer .copyright{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:#666;
+}
+.kv-footer .gotop{
+    width:60px;
+    height:60px;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:10%;
+    left:50%;
+}
+.kv-footer .gotop:before{
+    content:"";
+    width:0;
+    height:0;
+    display:block;
+    border-style:solid;
+    border-width:18px 10px 18px 10px;
+    border-color:transparent transparent #f00 transparent;
+    position:absolute;
+    top:3px;
+    left:20px;
+
+}

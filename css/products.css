@@ -1,0 +1,229 @@
+body{
+    background-image:url("../images/bg_floor.jpg");
+    background-size:900px 675px;
+}
+
+.breadcrumb{
+    font-size:14px;
+}
+
+.products{
+    position:relative;
+}
+
+.content{
+    width:840px;
+    margin:0 auto;
+    max-width:100%;
+    box-sizing: border-box;
+}
+
+.breadcrumb{
+    width:1000px;
+    display:flex;
+    align-items:center;
+    margin:35px auto 50px;
+    position:relative;
+    box-sizing: border-box;
+    z-index:1;
+}
+
+.breadcrumb a{
+    color:#666;
+}
+
+.breadcrumb span{
+    margin:0 5px;
+    position:relative;
+    top:-1px;
+}
+
+.title-box{
+    position:relative;
+    z-index:1;
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-box .title{
+    font-size:32px;
+    line-height:1.4em;
+}
+
+.title{
+    background:url("../images/bolx_y.png") no-repeat center bottom;
+}
+
+.sub-title{
+    font-size:18px;
+    color:#cfbea2;
+    margin-top:10px;
+}
+
+.card-box .card{
+    background:#fff;
+    display:flex;
+}
+
+.card .p{
+    width:90%;
+    max-width: 90%;
+}
+
+.card-box .text{
+    width:360px;
+    margin-top:6%;
+    flex-shrink:0;
+}
+
+.card-box .text h3,.card-box .text h2{
+    font-family:SimSun, "����", STSong;
+    font-weight:bold;
+    font-size:24px;
+}
+
+.card{
+    position:relative;
+    margin-top:10px;
+}
+
+.card.left{
+    padding-left:130px;
+}
+.card.right{
+    padding-right:130px;
+}
+
+.card.left .i {
+    position:absolute;
+    top:50%;
+    margin-top:-125px;
+    left:-75px;
+}
+
+.card.right .i {
+    position:absolute;
+    top:50%;
+    margin-top:-125px;
+    right:-75px;
+}
+
+.card{
+    background:#fff;
+    padding:45px 60px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.1);
+    margin-bottom:70px;
+}
+
+.card .i img{
+    width:240px;
+    max-width:100%;
+    transform:translateY(0);
+    transition: transform 1s ease;
+}
+
+.card .i:hover img{
+    transform:translateY(-20%);
+}
+
+.card .text h2{
+    margin-top:10px;
+    color:#793824;
+    font-size:38px;
+    line-height:1.2;
+}
+
+.card .text p{
+    line-height:2.0em;
+    color:#666;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.card.arch::after{
+    content: "";
+    display:block;
+    width:550px;
+    height:130px;
+    background:#fff;
+    position:absolute;
+    top:-130px;
+    left:145px;
+    border-radius:50%/100% 100% 0 0;
+}
+
+.card .text .btn-more{
+    margin-top:25px;
+}
+
+.card .text .btn-more{
+    font-size:20px;
+}
+
+.card .text .btn-more{
+    width:326px;
+    max-width:100%;
+    height:58px;
+    line-height:58px;
+    background:#e70012;
+    border:1px solid #e70012;
+    color:#fff;
+    text-align:center;
+    letter-spacing:1.5px;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding:0 50px;
+    justify-content: space-between;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+}
+
+.btn-more .arrow span{
+    display:block;
+    width:67px;
+    height:1px;
+    background-color:#fff;
+    position:relative;
+    transition:width 0.6s;
+}
+
+.btn-more:hover .arrow span{
+    width:100px;
+    background-color:#e70012;
+}
+
+.card .text  .btn-more:hover .arrow span::before{
+    border-top:1px solid #e70012;
+    border-right:1px solid #e70012;
+}
+
+.card .text  .btn-more:hover {
+    background-color:#fff;
+    color:#e70012;
+}
+
+.btn-more .arrow{
+    width:67px;
+}
+
+.btn-more .arrow span::before{
+    content:"";
+    width:10px;
+    height:10px;
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:rotate(45deg);
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
+    transform-origin: right top;
+    box-sizing: border-box;
+}
