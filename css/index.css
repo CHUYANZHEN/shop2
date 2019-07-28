@@ -1,6 +1,114 @@
 body{
     background:url("../images/bg-index.jpg");
 }
+.top{
+    width:100%;
+}
+
+#banner{
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+    position:relative;
+}
+
+#ul-imgs{
+    width:400%; /*图片数量改变时，需要更改*/
+    list-style: none;
+    display:flex;
+    overflow: hidden;
+    margin-left:0px;
+}
+
+#ul-imgs.animation{
+    transition: all 0.5s linear;
+}
+
+#ul-imgs>li{
+    width:100%;
+    height:100%;
+}
+
+#ul-imgs>li img{
+    width:100%;
+    height:500px;
+}
+
+#btn-left{
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:100%;
+    background: url(../images/left_ar.png) no-repeat;
+    background-position: 50%;
+}
+
+#btn-right{
+    position: absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:100%;
+    background: url(../images/right_ar.png) no-repeat;
+    background-position: 50%;
+}
+
+#ul-idx{
+    display:flex;
+    position:absolute;
+    bottom:5px;
+    left:50%;
+    width:70px;
+    margin-left:-35px;
+}
+#ul-idx>li{
+    width:10px;
+    height:10px;
+    background:rgba(0, 0, 0, 0.5);
+    border-radius:50%;
+}
+
+#ul-idx>li.active{
+    background:#fff;
+}
+
+#ul-idx>li+li{
+    margin-left:10px;
+}
+
+/*
+.swiper-container{
+    width:100%;
+    position: relative;
+    height:565px;
+}
+
+.swiper-top{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    top:0;
+    left:0;
+}
+
+.swiper-top img{
+    width:100%;
+    height:100%;
+}
+
+.swiper-bottom{
+    position:absolute;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:url('../images/p0_bg.png')
+}
+*/
+
 .section1{
     background:#fff;
     padding:45px 0;
@@ -176,9 +284,8 @@ body{
     padding-left:15px;
 }
 
-.news{
+.news,.banner .text{
     font-size:14px;
-    text-align: left;
 }
 
 .section2 .more{
